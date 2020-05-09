@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+struct Persona {
+    char nombre [10];
+    int edad;
+};
+
+int main()
+{ 
+    struct Persona person[3];
+    printf("Introduzca el nombre de la persona 1: ");
+    scanf("%s",person[0].nombre);
+    printf("\n");
+    printf("Introduzca la edad de la persona 1:");
+    scanf("%d",&person[0].edad);
+    printf("\n");
+    printf("Introduzca el nombre de la persona 2: ");
+    scanf("%s",person[1].nombre);
+    printf("\n");
+    printf("Introduzca la edad de la persona 2:");
+    scanf("%d",&person[1].edad);
+    printf("\n");
+    printf("Introduzca el nombre de la persona 3: ");
+    scanf("%s",person[2].nombre);
+    printf("\n");
+    printf("Introduzca la edad de la persona 3:");
+    scanf("%d",&person[2].edad);
+    printf("\n");
+    
+    int i=0; 
+    while (i<=2){
+        if(person[i].edad>=18){
+            printf("Las personas que son mayores de edad: %s\n ", person[i].nombre);
+            }
+            i++;
+        
+    }
+
+
+
+
+
+
+        return 0;
+}
