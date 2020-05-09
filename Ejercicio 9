@@ -1,0 +1,14 @@
+#include <stdio.h> #include <string.h>
+int main()
+{
+char cadena[100];
+int num2;
+printf("Introduzca la palabra deseada: ");
+scanf("%s", cadena);
+int i = strlen(cadena)-1;
+printf("La palabra al reves es:\t");;
+for (num2=i; num2>=0; num2--){
+printf("%c", cadena[num2]);
+}
+return 0;
+}
