@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{   
+    int num1;
+    
+    printf("Introduzca el primer numero:");
+    scanf ("%d", &num1);
+    printf("\n");
+    int i =num1;
+    while(i> 1){
+        i= i / 2; 
+        printf("Resultado final es: %d\n", i );
+    }
+   
+  
+    
+    return 0;
+}
