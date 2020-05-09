@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int hora;
+    int minutos;
+    int segundos;
+    printf("Por favor, introduzca la hora:" );
+    scanf("%d", &hora);
+    
+    printf  ("Por favor, introduzca los minutos:" );
+    scanf("%d",&minutos);
+     
+    printf  ("Por favor, introduzca los segundos:" );
+    scanf("%d",&segundos);
+     
+    int hora1 = hora*3600; 
+    int hora2 = minutos*60 ; 
+    int hora_final= hora1+ hora2 + segundos;
+    printf  ("Mi hora final en segundos es: %d" , hora_final);
+    return 0;
+}
