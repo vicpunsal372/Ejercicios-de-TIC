@@ -1,0 +1,21 @@
+#include <stdio.h>
+void cambio (int * num1, int * num2){
+    int aux = *num1;
+    *num1 = * num2;
+    *num2 = aux;
+}
+
+int main()
+{
+    int num1;
+    int num2;
+    printf("Introduzca el primer numero:");
+    scanf("%d",&num1);
+    
+    printf("Introduzca el segundo numero:");
+    scanf("%d",&num2);
+    cambio(&num1,&num2);
+    printf("Los numeros cambiados son: el primer numero seria %d el segundo numero seria %d ",num1,num2);
+
+    return 0;
+}
